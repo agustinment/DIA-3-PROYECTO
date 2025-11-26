@@ -1,25 +1,26 @@
-# PROYECTO DE PRÁCTICA DÍA 3 
-Este proyecto se basa en una to-do list básica con HTML, CSS y JS. 
-Permite agregar tareas y mostrarlas en pantalla.
+# 📝 PROYECTO DE PRÁCTICA DÍA 3 
+To-Do List básica con HTML, CSS y JavaScript. 
+Permite agregar tareas y mostrarlas dinámicamente en pantalla.
 
-**DEMO EN VIVO**: https://agustinment.github.io/DIA-3-PROYECTO/
-## APRENDÍ
-- Manejar eventos con addEventListener
-- Implementar JavaScript a una página web
-- Practiqué manipular el DOM con appendChild
-- Practiqué flexbox
+**🔗 DEMO EN VIVO**: https://agustinment.github.io/DIA-3-PROYECTO/
+
+## 🚀QUÉ APRENDÍ
+- Uso de addEventListener para manejar eventos.
+- Integrar JavaScript a una página web.
+- Manipular el DOM con appendChild.
+- Mejorar mi manejo de flexbox.
 ## PROBLEMAS ENCONTRADOS
-- El contenedor no crecía automático porque le había puesto height fija
-- El input y el botón no quedaban alineados porque el div tenía mal configurado el flex.
-- No sabía como agregar los elementos *li* en el DOM
+- El contenedor no crecía porque tenía una height fija.
+- El input y el botón no quedaban alineados correctamente por el mal uso de flex.
+- No sabía como agregar los elementos *li* al DOM.
 ## CÓMO LO SOLUCIONÉ
-- Eliminé el height fijo y lo dejé como min-height, así crecía sin problemas
-- Revisé el layout con DevTools y probé distintas configuraciones para lograr la alineación
-- Busqué la documentación de JavaScript y pregunté a ChatGPT sobre los distintos métodos
-## MEJORAS MAÑANA
-- Agregar botón "eliminar tareas"
-- Mejorar el diseño
+- Reemplacé la height por min-height, permitiendo que el contenedor crezca automáticamente.
+- Revisé el layout con DevTools y ajusté las propiedades de flex hasta lograr una alineación correcta.
+- Consulté documentación y probé diferentes métodos hasta comprender cómo insertar elementos en el DOM.
+## MEJORAS PARA MAÑANA
+- Agregar botón para eliminar tareas.
+- Mejorar diseño y estilos.
 ## TECNOLOGÍAS
 - HTML5
-- CSS
+- CSS3
 - JAVASCRIPT
