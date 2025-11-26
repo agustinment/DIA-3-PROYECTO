@@ -1,6 +1,8 @@
 # PROYECTO DE PRÁCTICA DÍA 3 
 Este proyecto se basa en una to-do list básica con HTML, CSS y JS. 
 Permite agregar tareas y mostrarlas en pantalla.
+
+**DEMO EN VIVO**: https://agustinment.github.io/DIA-3-PROYECTO/
 ## APRENDÍ
 - Manejar eventos con addEventListener
 - Implementar JavaScript a una página web
