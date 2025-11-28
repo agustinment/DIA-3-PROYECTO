@@ -14,13 +14,13 @@ const listManager = () => {
     // Guardamos taskText para evitar leer el textContent (que incluye el botón)
     const taskText = input.value.trim();
 
-    let task = document.createElement('li')
-    task.textContent = input.value;
+    let task = document.createElement('p')
+    task.textContent = input.value.toUpperCase();
+    task.className = 'taskItem';
 
     let deleteButton = document.createElement('button')
+    deleteButton.className = 'delBtn'
     deleteButton.innerHTML = 'X';
-    deleteButton.style.display = 'inline';
-    deleteButton.style.marginLeft = '1rem';
 
     // Cuando se clickee, elimina la tarea
     deleteButton.addEventListener('click', () => {

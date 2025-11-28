@@ -17,9 +17,6 @@ Permite agregar tareas y mostrarlas dinámicamente en pantalla.
 - Reemplacé la height por min-height, permitiendo que el contenedor crezca automáticamente.
 - Revisé el layout con DevTools y ajusté las propiedades de flex hasta lograr una alineación correcta.
 - Consulté documentación y probé diferentes métodos hasta comprender cómo insertar elementos en el DOM.
-## 🎯 MEJORAS PARA MAÑANA
-- Agregar botón para eliminar tareas.
-- Mejorar diseño y estilos.
 ## 🛠️ TECNOLOGÍAS
 - HTML5
 - CSS3

@@ -2,18 +2,18 @@
 
 html {
     font-size: 16px;
-    font-family: "Science Gothic";
+    font-family: Inter, sans-serif;
 }
 
 header h1 {
     text-align: center;
     font-size: 3rem;
-    color: white;
-    margin-top: 0;
+    color: #1A1A1A;
+    margin: 1rem 0;
 }
 
 body {
-    background: linear-gradient(rgb(0, 173, 0), rgb(0, 87, 0), rgb(0, 53, 0));
+    background: linear-gradient(135deg, #cdcfd1 ,#E5E7EB, #F3F4F6);
     height: 100vh;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -26,11 +26,11 @@ main {
 
 /* CONTAINER STYLES */
 
-.input-container {
+.inputContainer {
     padding-top: 1rem;
     padding-bottom: 1rem;
     margin: 0 auto;
-    width: 40%;
+    width: 60%;
 
     display: flex;
     justify-content: center;
@@ -39,21 +39,37 @@ main {
     gap: 0.5rem;
 }
 
-.task-container {
-    color: white;
-    background: linear-gradient(rgb(0, 0, 0), rgb(82, 81, 81));
+.taskContainer {
+    color: #1A1A1A;
+    background-color: #FFFFFF;
     border-radius: 1rem;
-    width: 80%;
-    min-height: 20rem;
+    padding: 1rem;
+    width: 90%;
+    min-height: 30rem;
     margin: 0 auto;
+    box-shadow: 0.25rem 0.5rem 1.125rem rgba(0, 0, 0, 0.12);
 }
 
 /* BUTTON STYLES */
 
 #addbtn {
-    width: 50%;
-    height: 1.7rem;
+    background: linear-gradient(135deg, #3B82F6, #60A5FA);
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
     border-radius: 0.5rem;
+    box-shadow: 0 5px #0b295a;
+    cursor: pointer;
+    width: 60%;
+}
+
+#addbtn:active {
+    margin-top: 5px;
+    box-shadow: 0 0;
+}
+
+#addbtn:hover {
+    background: linear-gradient(135deg, #4286f5, #2563EB);
 }
 
 /* TASK LIST STYLES */
@@ -66,7 +82,82 @@ main {
     text-align: justify;
 }
 
-/* COUNTER STYLES */
-#taskCount {
-    position: absolute;
+/* DELETE TASK BUTTON */
+.delBtn {
+    background-color: #EF4444;
+    color: white;
+    border: 0;
+    border-radius: 0.375rem;
+    padding: 0.25rem 0.5rem;
+    cursor: pointer;
+}
+
+.delBtn:hover {
+    background-color: #8b2323;
+}
+
+/* EACH TASK ITEM STLES */
+.taskItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background: #FFFFFF;
+  padding: 0.75rem;
+  border-radius: 0.75rem;
+  margin: 0.75rem;
+  border: 1px solid #E5E5E5;
+}
+
+#taskInput {
+    width: 100%;
+    padding: 0.5rem 0.75rem;
+    margin: 1rem 0;
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 0.25rem 0.5rem 1.125rem rgba(0, 0, 0, 0.12);
+}
+
+.taskCounter {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-top: 0;
+}
+
+.taskCounter span {
+    background: #3B82F6;
+    color: white;
+    margin-left: 0.5rem;
+    padding: 0.25rem 1rem;
+    border-radius: 999px; /* píldora */
+    font-weight: 700;
+}
+
+@media only screen and (max-width: 480px) {
+    main {
+        width: 80%;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    #addbtn {
+        width:65%
+    }
+
+    .taskContainer {
+        min-height: 25rem;
+    }
+}
+
+
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    main {
+        width: 60%;
+    }
 }
